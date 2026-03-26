@@ -8,6 +8,7 @@ html {
     background-image: url(../images/desktop_letterbox_retina-TAE-Landing-Page_Hero-Image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -23,7 +24,153 @@ header img {
     max-width: 200px;
     padding: 1em;
 }
+
 header {
     display: flex;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    padding: 20px 0;
+}
+
+.intro {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro ul {
+    margin-left: 8%;
+}
+
+.intro h4 {
+    padding-top: 15px;
+}
+
+.intro p::first-line {
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.formgroup {
+    display: flex;
+    align-items: baseline;
+}
+
+form h5 {
+    padding-top: 20px;
+}
+
+.formgroup label {
+    width: 30%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+input[type=text],
+input[type=date],
+select {
+    font-size: 90%;
+    width: 40%;
+}
+
+.radiogroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}
+
+.radiogroup label {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.radiotype label {
+    width: 70%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
+input[type=checkbox] {
+    margin-left: 15%
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: lavenderblush;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 7px;
+    border: 1px solid dodgerblue;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: dodgerblue;
+    border-color: lavenderblush;
+    color: whitesmoke;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    font-variant: small-caps;
+    background-color: lavenderblush;
+}
+
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .intro {
+        width: 95%;
+        margin: auto;
+    }
+
+    header h2 {
+        font-size: 125%;
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .formgroup {
+        flex-direction: column;
+    }
+
+    .radiotype {
+        flex-direction: row;
+    }
+
+    .formgroup label {
+        width: 95%;
+        text-align: left;
+    }
+
+    input[type=text],
+    input[type=date],
+    select {
+        width: 95%;
+    }
 }
